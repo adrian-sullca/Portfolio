@@ -1,9 +1,16 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      "@": "/src",
+  root: "./public", // Root directory for Vite
+  build: {
+    outDir: "../dist", // Output directory for the build
+    rollupOptions: {
+      input: "./public/index.html", // Entry point for the build
+    },
+  },
+  server: {
+    watch: {
+      usePolling: true, // Ensures changes are detected in some environments
     },
   },
 });
