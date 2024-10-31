@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "./public", // Root directory for Vite
+  base: "./", // Use relative paths for assets
   build: {
     outDir: "../dist", // Output directory for the build
     rollupOptions: {
