@@ -5,15 +5,21 @@ export default {
     extend: {
       colors: {
         primary: "#f5f5f5", // bg-gray-100
-        secondary1: "#86EFAC", // bg-green-300
-        secondary2: "#93C5FD", // bg-blue-300
-        tertiary: "#1A3D40",
+        blueCustom: "#0A6CF8",
+        colorLetra: "#BFC7D2",
+      },
+      screens: {
+        // Definiendo tus propios puntos de ruptura
+        sm: '640px',  // Pantallas pequeñas
+        md: '855px',  // Pantallas medianas
+        lg: '1024px', // Pantallas grandes
+        xl: '1280px', // Pantallas extra grandes
+        '2xl': '1536px', // Pantallas muy grandes
       },
     },
   },
   plugins: [],
 };
-
 // extend: {
 //   spacing: {
 //     '128': '32rem',

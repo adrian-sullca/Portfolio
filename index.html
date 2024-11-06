@@ -3,84 +3,632 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-    <script type="module" src="./src/js/main.js"></script>
+    <title>Adrian Sullca</title>
+    <script src="./src/js/particles.min.js"></script>
+    <script src="./src/js/app.js" defer></script>
+    <script type="module" src="./src/js/main.js" defer></script>
   </head>
+  <div id="particles-js"></div>
+  <body class="grid grid-rows-auto">
+    <header
+      class="fixed top-0 left-0 w-full z-10 bg-opacity-20 backdrop-blur-sm p-2 py-3 flex justify-center gap-8 text-white items-center"
+    >
+      <a class="hidden sm:block w-24 text-center" href="#proyectos"
+        >Proyectos</a
+      >
+      <a class="hidden sm:block w-24 text-center" href="#curriculum"
+        >Curriculum</a
+      >
+      <img src="./src/assets/img/logoAdrianWhite.png" alt="Logo" class="w-7" />
+      <a class="hidden sm:block w-24 text-center" href="#tecnologias"
+        >Tecnologías</a
+      >
+      <a class="hidden sm:block w-24 text-center" href="#contactame"
+        >Contáctame</a
+      >
+    </header>
 
-  <body class="bg-gray-50 flex items-center justify-center h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
-      <!-- Centered Image -->
-      <div class="flex justify-center mb-4">
-        <img src="../src/assets/user_icon.png" alt="User Icon" class="w-24" />
-      </div>
+    <main class="grid grid-rows-auto max-w-[1000px] m-auto">
+      <section class="flex flex-col text-center my-28 mt-40" id="sobre-mi">
+        <p class="text-2xl font-semibold text-white md:text-3xl">
+          Adrian Sullca Aquino
+        </p>
+        <p class="text-blueCustom text-lg md:text-xl">
+          Desarrollador de Aplicaciones Web
+        </p>
+        <div class="flex flex-col mt-4 w-max m-auto gap-y-2">
+          <a href="https://chatgpt.com/c/67293cc5-bb98-8003-b57e-0072d5fe8405" target="_blank">
+            <button
+            class="text-white bg-blueCustom rounded py-1 px-3 text-sm flex gap-2 items-center justify-center transition duration-300 ease-in-out hover:shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+          >
+            <img src="./src/assets/img/file10.svg" alt="" class="w-4" />
+            <p>Ver cv</p>
+          </button>
+          </a>
+        </div>
+      </section>
+      <section class="flex flex-col text-center my-12 mx-7" id="presentación">
+        <p class="text-base text-colorLetra text-center md:text-lg">
+          Mi nombre es Adrian, estudiante del grado de DAW, con fuerte interés
+          en crear soluciones innovadoras y eficientes. Me encantan los retos
+          porque cada uno es una oportunidad para aprender y crecer.
+        </p>
+      </section>
+      <section
+        class="flex flex-col text-center my-12 mx-7 md:pt-[70px]"
+        id="proyectos"
+      >
+        <p
+          class="text-white text-sm font-semibold text-center mb-5 sm:text-base md:text-lg"
+        >
+          PROYECTOS
+        </p>
+        <!-- <nav
+          class="text-white w-max py-2 px-6 rounded bg-gray-800 text-justify text-sm flex gap-7"
+        >
+          <a href="" class="hover:border-b border-blueCustom">Todos</a>
+          <a href="" class="hover:border-b border-blueCustom">Backend</a>
+          <a href="" class="hover:border-b border-blueCustom">Frontend</a>
+        </nav> -->
+        <div class="grid grid-rows-auto mt-3">
+          <div class="md:grid md:grid-cols-2 gap-5">
+            <div class="text-left md:grid md:grid-rows-[auto,1fr,auto]">
+              <div class="flex justify-between">
+                <p class="text-blueCustom text-sm">Proyecto</p>
+                <a href="https://github.com/adrian-sullca/Bookline-App" target="_blank">
+                  <button
+                  class="border border-gray-500 text-sm text-gray-400 rounded-md py-1 px-4 flex items-center gap-2 transition duration-300 ease-in-out hover:shadow-[0_0_10px_4px_rgba(107,114,128,0.5)]"
+                >
+                  <img src="./src/assets/img/github5.png" alt="" class="w-5" />
+                  <p>Código</p>
+                </button>
+                </a>
+              </div>
 
-      <form class="space-y-4">
-        <!-- Email -->
+              <div class="flex flex-col py-1">
+                <p class="text-white font-semibold md:text-lg">Bookline app</p>
+                <p class="text-justify text-colorLetra md:text-lg">
+                  Web para compra y venta de libros, desarrollada en PHP con verificación con google y PHP mailer. Los usuarios pueden navegar el catálogo,
+                  añadir libros al carrito, realizar compras y ver su historial de compras.
+                </p>
+              </div>
+
+              <div class="md:flex gap-2 hidden">
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Php
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Bootstrap
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Html
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Css
+                </button>
+              </div>
+            </div>
+
+            <a
+              href=""
+              class="mt-3 md:mt-0 relative overflow-hidden rounded group"
+            >
+              <img
+                src="./src/assets/img/Captura de pantalla 2024-11-04 190420.png"
+                alt=""
+                class="transition transform group-hover:scale-105 group-hover:brightness-75 duration-300 ease-in-out"
+              />
+              <span
+                class="absolute inset-0 flex items-center justify-center text-colorLetra text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+              >
+                Ver App
+              </span>
+            </a>
+            <div class="flex gap-2 mt-2 md:hidden">
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                React
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Javascript
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Php
+              </button>
+            </div>
+          </div>
+          <hr class="border-b border-blueCustom w-full mx-auto my-7 md:my-10" />
+          <div class="md:grid md:grid-cols-2 gap-5">
+            <div
+              class="text-left md:grid md:grid-rows-[auto,1fr,auto] md:col-start-2"
+            >
+              <div class="flex justify-between">
+                <p class="text-blueCustom text-sm">Frontend</p>
+                <button
+                  class="border border-gray-500 text-sm text-gray-400 rounded-md py-1 px-4 flex items-center gap-2 transition duration-300 ease-in-out hover:shadow-[0_0_10px_4px_rgba(107,114,128,0.5)]"
+                >
+                  <img src="./src/assets/img/github5.png" alt="" class="w-5" />
+                  <p>Código</p>
+                </button>
+              </div>
+
+              <div class="flex flex-col py-1">
+                <p class="text-white font-semibold md:text-lg">Bookline app</p>
+                <p class="text-justify text-colorLetra md:text-lg">
+                  Plataforma en línea para la compra y venta de libros,
+                  desarrollada en PHP. Los usuarios pueden navegar el catálogo,
+                  añadir libros al carrito, y realizar compras seguras.
+                </p>
+              </div>
+
+              <div class="md:flex gap-2 hidden">
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  React
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Javascript
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Php
+                </button>
+              </div>
+            </div>
+
+            <a
+              href=""
+              class="mt-3 md:mt-0 relative overflow-hidden rounded group md:col-start-1 md:row-start-1"
+            >
+              <img
+                src="./src/assets/img/Captura de pantalla 2024-11-04 190420.png"
+                alt=""
+                class="transition transform group-hover:scale-105 group-hover:brightness-75 duration-300 ease-in-out"
+              />
+              <span
+                class="absolute inset-0 flex items-center justify-center text-colorLetra text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+              >
+                Ver App
+              </span>
+            </a>
+
+            <div class="flex gap-2 mt-2 md:hidden">
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                React
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Javascript
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Php
+              </button>
+            </div>
+          </div>
+          <hr class="border-b border-blueCustom w-full mx-auto my-7 md:my-10" />
+          <div class="md:grid md:grid-cols-2 gap-5">
+            <div class="text-left md:grid md:grid-rows-[auto,1fr,auto]">
+              <div class="flex justify-between">
+                <p class="text-blueCustom text-sm">Frontend</p>
+                <button
+                  class="border border-gray-500 text-sm text-gray-400 rounded-md py-1 px-4 flex items-center gap-2 transition duration-300 ease-in-out hover:shadow-[0_0_10px_4px_rgba(107,114,128,0.5)]"
+                >
+                  <img src="./src/assets/img/github5.png" alt="" class="w-5" />
+                  <p>Código</p>
+                </button>
+              </div>
+
+              <div class="flex flex-col py-1">
+                <p class="text-white font-semibold md:text-lg">Bookline app</p>
+                <p class="text-justify text-colorLetra md:text-lg">
+                  Plataforma en línea para la compra y venta de libros,
+                  desarrollada en PHP. Los usuarios pueden navegar el catálogo,
+                  añadir libros al carrito, y realizar compras seguras.
+                </p>
+              </div>
+
+              <div class="md:flex gap-2 hidden">
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  React
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Javascript
+                </button>
+                <button
+                  class="text-xs bg-gray-800 text-gray-400 lg:text-sm py-2 px-4 rounded-xl"
+                >
+                  Php
+                </button>
+              </div>
+            </div>
+            <a
+              href=""
+              class="mt-3 md:mt-0 relative overflow-hidden rounded group"
+            >
+              <img
+                src="./src/assets/img/Captura de pantalla 2024-11-04 190420.png"
+                alt=""
+                class="transition transform group-hover:scale-105 group-hover:brightness-75 duration-300 ease-in-out"
+              />
+              <span
+                class="absolute inset-0 flex items-center justify-center text-colorLetra text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+              >
+                Ver App
+              </span>
+            </a>
+            <div class="flex gap-2 mt-2 md:hidden">
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                React
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Javascript
+              </button>
+              <button
+                class="text-xs bg-gray-800 text-gray-400 py-2 px-4 rounded-xl"
+              >
+                Php
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col text-center my-12 mx-7" id="tecnologias">
+        <p
+          class="text-white text-sm font-semibold text-center mb-6 sm:text-base md:text-lg"
+        >
+          TECNOLOGIAS
+        </p>
         <div>
-          <label for="email" class="block text-sm font-medium mb-1"
-            >Email</label
-          >
+          <ul class="flex items-center flex-wrap gap-6 justify-center">
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-blue-500/10 backdrop-blur-md transition duration-300 group-hover:bg-blue-500/20"
+                ></div>
+                <img
+                  src="./src/assets/img/java.svg"
+                  alt="Java"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(59,130,246,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(59,130,246,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                Java
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(97,129,182)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(97,129,182)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/php.svg"
+                  alt="PHP"
+                  class="w-8 relative z-10 rounded-md"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(97,129,182,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(97,129,182,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                PHP
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(97,218,251)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(97,218,251)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/react.svg"
+                  alt="React"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(97,218,251,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(97,218,251,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                React
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(240,219,79)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(240,219,79)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/js.svg"
+                  alt="JavaScript"
+                  class="w-8 relative z-10 rounded-md"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(240,219,79,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(240,219,79,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                JavaScript
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(228,77,38)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(228,77,38)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/html.svg"
+                  alt="HTML"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(228,77,38,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(228,77,38,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                HTML
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(51,168,220)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(51,168,220)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/css.svg"
+                  alt="CSS"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(51,168,220,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(51,168,220,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                CSS
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(5,136,191)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(5,136,191)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/mysql.svg"
+                  alt="MySQL"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(5,136,191,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(5,136,191,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                MySQL
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(255,0,127)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(255,0,127)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/figma.svg"
+                  alt="Figma"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(255,0,127,0.4)] group-hover:shadow-[0_0_20px_7px_rgba(255,0,127,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+              >
+                Figma
+              </span>
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(58,178,172)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(58,178,172)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/tailwind.svg"
+                  alt="Tailwind"
+                  class="w-9 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(58,178,172,0.4)] group-hover:shadow-[0_0_20px_7px rgba(58,178,172,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                >Tailwind</span
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(159,110,232)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(159,110,232)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/bootstrap.svg"
+                  alt="Bootstrap"
+                  class="w-9 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(159,110,232,0.4)] group-hover:shadow-[0_0_20px_7px rgba(159,110,232,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                >Bootstrap</span
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(243,79,41)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(243,79,41)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/git.svg"
+                  alt="Git"
+                  class="w-8 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(243,79,41,0.4)] group-hover:shadow-[0_0_20px_7px rgba(243,79,41,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                >Git</span
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="w-14 h-14 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 rounded-full bg-[rgb(60,153,212)]/10 backdrop-blur-md transition duration-300 group-hover:bg-[rgb(60,153,212)]/20"
+                ></div>
+                <img
+                  src="./src/assets/img/vscode.svg"
+                  alt="VSCode"
+                  class="w-8 mr-1 relative z-10"
+                />
+                <div
+                  class="absolute inset-0 rounded-full shadow-[0_0_15px_5px_rgba(60,153,212,0.4)] group-hover:shadow-[0_0_20px_7px rgba(60,153,212,0.6)] transition duration-300 pointer-events-none"
+                ></div>
+              </div>
+              <span
+                class="absolute top-15 left-1/2 transform -translate-x-1/2 mb-2 text-white text-sm bg-black bg-opacity-80 rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"
+                >VSCode</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="flex flex-col text-center my-12 mx-7" id="contactame">
+        <p
+          class="text-white text-sm font-semibold text-center mb-5 sm:text-base md:text-lg"
+        >
+          CONTATACME
+        </p>
+        <div
+          class="flex flex-col gap-y-2 text-white p-4 rounded border mb-4 border-colorLetra"
+        >
+          <label for="" class="text-left text-colorLetra">Nombre</label>
           <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            required
-            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            type="text"
+            class="rounded border-0 px-2 py-1 text-black bg-colorLetra"
           />
-        </div>
-
-        <!-- Password -->
-        <div>
-          <label for="password" class="block text-sm font-medium mb-1"
-            >Password</label
-          >
+          <label for="" class="text-left text-colorLetra">Email</label>
           <input
-            id="password"
-            type="password"
-            placeholder="Password"
-            required
-            class="w-full bg-gray-100 p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            type="text"
+            class="rounded border-0 px-2 py-1 text-black bg-colorLetra"
           />
+          <label for="" class="text-left text-colorLetra">Mensaje</label>
+          <textarea
+            id="mensaje"
+            class="rounded border-0 px-2 py-1 text-black bg-colorLetra"
+            rows="4"
+            placeholder="Escribe un mensaje..."
+          ></textarea>
+          <button
+            class="bg-blueCustom rounded mt-3 mb-1 py-1 text-sm font-semibold sm:py-2"
+          >
+            Enviar email
+          </button>
         </div>
+        <nav class="flex flex-col gap-y-3 my-2">
+          <a href="">
+            <button class="text-white text-sm flex items-center gap-2 m-auto">
+              <p>adrian.infooo@gmail.com</p>
+            </button>
+          </a>
+        </nav>
+      </section>
+    </main>
 
-        <!-- Remember Me Checkbox -->
-        <div class="flex items-center">
-          <input id="remember" type="checkbox" class="mr-2" />
-          <label for="remember" class="text-sm">Remember me</label>
-        </div>
-
-        <!-- Centered Buttons -->
-        <div class="flex justify-between space-x-2">
-          <a
-            href="/src/pages/register.html"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
-          >
-            Register
-          </a>
-          <a
-            href="/src/pages/infoApp.html"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 flex items-center justify-center"
-          >
-            Log In
-          </a>
-        </div>
-
-        <!-- Social Media Buttons -->
-        <div class="flex flex-col items-center space-y-2 mt-4">
-          <a
-            href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwiMguy70qKJAxVR0AIHHZ_xASQQPAgI&safe=active&ssui=on"
-            class="h-8 w-full bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 flex items-center justify-center"
-          >
-            Log in with Google
-          </a>
-          <a
-            href="https://github.com/login"
-            class="h-8 w-full bg-gray-800 text-white text-sm font-medium rounded-full hover:bg-gray-900 flex items-center justify-center"
-          >
-            Log in with GitHub
-          </a>
-        </div>
-      </form>
-    </div>
+    <footer class="flex gap-7 items-center justify-center my-6">
+      <a href="">
+        <img src="./src/assets/img/gmail.svg" alt="" class="w-6" />
+      </a>
+      <a href="">
+        <img src="./src/assets/img/linkedin.svg" alt="" class="w-6" />
+      </a>
+      <a href="">
+        <img src="./src/assets/img/github.svg" alt="" class="w-6" />
+      </a>
+      <a href="">
+        <img src="./src/assets/img/telegram.svg" alt="" class="w-6" />
+      </a>
+    </footer>
   </body>
 </html>
