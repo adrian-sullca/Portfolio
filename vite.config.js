@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"), 
-        sobreMi: path.resolve(__dirname, "src/pages/sobre-mi.html"),
       },
     },
   },
